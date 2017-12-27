@@ -10,7 +10,7 @@ public class Main extends Frame implements ActionListener {
     Main() {
         setSize(500,430);
         setLayout(null);
-        setVisible(true);
+
         setTitle("Word Counter");
         ta=new TextArea();
         ta.setBounds(100, 50, 300, 230);
@@ -18,6 +18,9 @@ public class Main extends Frame implements ActionListener {
         b=new Button("Count");
         b.setBounds(200, 300, 80, 30);
         add(b);
+
+        setVisible(true);
+
         b.addActionListener(this);
 
         addWindowListener(new WindowAdapter(){
